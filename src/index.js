@@ -7,7 +7,7 @@ const path = require('path');
 
 const app = express();
 
-mongoose.connect('mongodb://localhost/Upload');
+mongoose.connect(process.env.MONGO_URL);
 mongoose.Promise = global.Promise;
 
 app.use(express.json());
