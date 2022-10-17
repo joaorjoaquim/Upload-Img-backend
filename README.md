@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=400px height=400px src="server_logo.png" alt="Project logo"></a>
+ <img width=300px height=300px src="server_logo.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">A backend for an image upload system</h3>
@@ -79,26 +79,24 @@ There are 3 different requests to test this backend.
 
 #### POST Posts
 
-This is a request to register a user. Expect a JSON in the format below with the URL http://localhost:3000/auth/register
+This is a request to register a user. Expect a form-data with a key file and a image as value in the format below with the URL: http://localhost:3000/posts
 
 ```
 {
-  "name": "User name",
-  "email": "User email",
-  "password": "User password"
+  file: image file
 }
 ```
 
 #### GET List
 
-This is a request that returns all registered projects. Don't need to pass params through a JSON, just run the request with the URL: http://localhost:3000/projects
+This is a request that returns all registered projects. Don't need to pass params through a JSON, just run the request with the URL: http://localhost:3000/posts
 
 #### DEL Delete
 
-This is a request that delete an specific project. Don't need to pass params through a JSON, just run the request with the URL passing the project's Id: http://localhost:3000/projects/+projectId
+This is a request that delete an specific project. Don't need to pass params through a JSON, just run the request with the URL passing the project's Id: http://localhost:3000/posts/+imageId
 
 ```
-http://localhost:3000/projects/633216f1c7c06fdbfe9dd64c
+http://localhost:3000/posts/633216f1c7c06fdbfe9dd64c
 ```
 
 ## ⛏️ Built Using <a name = "built_using"></a>
