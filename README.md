@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=400px height=200px src="crud_logo.png" alt="Project logo"></a>
+ <img width=400px height=200px src="server_logo.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">A backend for an image upload system</h3>
