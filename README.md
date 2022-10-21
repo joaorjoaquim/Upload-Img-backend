@@ -72,7 +72,8 @@ A step by step series of examples that tell you how to get a development env run
 Running the project with the command line
 
 ```
-node src/index.js
+yarn start or node src/index.js (production environment)
+yarn dev (dev environment)
 ```
 
 There are 3 different requests to test this backend.
